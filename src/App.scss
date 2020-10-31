@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+$button: #4d4d4d;
+@mixin shadow {
+  box-shadow: -6px -6px 9px #535353,
+    6px 6px 9px rgba($color: #414040, $alpha: 0.9);
+}
+@mixin shadow-inset {
+  box-shadow: inset -6px -6px 9px #535353,
+    inset 6px 6px 9px rgba($color: #414040, $alpha: 0.9);
+}
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
+
+#root {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: $button;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.calculator {
+  @include shadow;
+  padding: 1.3rem;
+  width: 320px;
+  position: relative;
+  border-radius: 5px;
+}
+.display {
+  @include shadow-inset;
+  height: 70px;
+  background: #000000;
+  border-radius: 50px;
+  padding: 16px 32px;
+  padding-bottom: 0;
+}
+
+.formulaScreen {
+  min-height: 20px;
+  font-family: digital;
+  font-size: 20px;
+  color: orange;
+  text-shadow: 1px 1px 2px orange;
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.outputScreen {
+  font-size: 29px;
+  font-family: digital;
+  color: white;
+  text-align: right;
+  line-height: 35px;
+  padding-bottom: 0;
+}
+.input {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1;
+}
+
+button {
+  @include shadow;
+  outline: none;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  color: white;
+  margin: 6px;
+  border: none;
+  border-radius: 30px;
+  background: $button;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background: #474747;
+    z-index: 3;
+  }
+  &:active {
+    @include shadow-inset;
+  }
+}
+.row-one,
+.row-two,
+.row-three {
+  margin-right: 15px;
+}
+
+.jumbo {
+  width: 160px;
+}
+#clear {
+  background: #ac3939;
+}
+#clear:hover {
+  background: #8a2d2d;
+}
+.operator {
+  background: #666666;
+  color: orange;
+}
+
+.operator:hover {
+  background: #424242;
+}
+#equals {
+  background: #004466;
+  position: absolute;
+  height: 130px;
+  bottom: 5px;
+}
+#equals:hover {
+  background: #002e44;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #fff;
+
+  button {
+    font-family: "Dosis", sans-serif;
+    width: 7em;
+    padding: 0.2em;
+    font-size: 1.2em;
+    background-color: transparent;
+    font-weight: 100;
+    font-size: 1.3em;
+    border: 2px solid;
+    border-color: #fff;
+    border-radius: 10px;
+    color: #fff;
+  }
+  button:hover {
+    background-color: #f39c12;
+    font-weight: 200;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #f39c12, 0 0 40px #f39c12, 0 0 80px #f39c12;
+  }
+}
