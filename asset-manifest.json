@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/neumorpher/static/css/main.7ec00d9e.chunk.css",
+    "main.js": "/neumorpher/static/js/main.64251baf.chunk.js",
+    "main.js.map": "/neumorpher/static/js/main.64251baf.chunk.js.map",
+    "runtime-main.js": "/neumorpher/static/js/runtime-main.c86f6a4b.js",
+    "runtime-main.js.map": "/neumorpher/static/js/runtime-main.c86f6a4b.js.map",
+    "static/js/2.90e6924f.chunk.js": "/neumorpher/static/js/2.90e6924f.chunk.js",
+    "static/js/2.90e6924f.chunk.js.map": "/neumorpher/static/js/2.90e6924f.chunk.js.map",
+    "index.html": "/neumorpher/index.html",
+    "precache-manifest.e74bde4e1b0d785ea76f619ea0dd0031.js": "/neumorpher/precache-manifest.e74bde4e1b0d785ea76f619ea0dd0031.js",
+    "service-worker.js": "/neumorpher/service-worker.js",
+    "static/css/main.7ec00d9e.chunk.css.map": "/neumorpher/static/css/main.7ec00d9e.chunk.css.map",
+    "static/js/2.90e6924f.chunk.js.LICENSE.txt": "/neumorpher/static/js/2.90e6924f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c86f6a4b.js",
+    "static/js/2.90e6924f.chunk.js",
+    "static/css/main.7ec00d9e.chunk.css",
+    "static/js/main.64251baf.chunk.js"
+  ]
+}
